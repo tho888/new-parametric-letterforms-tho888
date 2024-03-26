@@ -17,7 +17,10 @@ const letterA = {
   "offsetx": 0,
   "offsety": 0,
   "lerpColorAmt": 0.3,
-  "lineLeft": 0,
+  "lineLeftLower": 0,
+  "lineLeftUpper": 0,
+  "lineRightLower": 0,
+  "lineRightUpper": 55
 }
 
 const letterB = {
@@ -25,7 +28,8 @@ const letterB = {
   "offsetx": 0,
   "offsety": 0,
   "lerpColorAmt": 0.4,
-  "lineLeft": 150
+  "lineLeftLower": 0,
+  "lineLeftUpper": 150
 }
 
 const letterC = {
@@ -33,7 +37,8 @@ const letterC = {
   "offsetx": 0,
   "offsety": 0,
   "lerpColorAmt": 0.5,
-  "lineLeft": 0,
+  "lineLeftLower": 0,
+  "lineLeftUpper": 0
 }
 
 const darkGrey = "#241F1D";
@@ -74,7 +79,10 @@ function drawLetter(posx, posy, letterData) {
 
   //line variables
   let colorMixVar = letterData["lerpColorAmt"];
-  let lineLeftHeight = letterData["lineLeft"];
+  let lineLeftY1 = letterData["lineLeftLower"];
+  let lineLeftY2 = letterData["lineLeftUpper"];
+  let lineRightY1 = letterData["lineRightLower"];
+  let lineRightY2 = letterData["lineRightUpper"];
 
   let salmonCopy = color("#F2755E");
   let darkGreyCopy = color("#241F1D");
@@ -89,7 +97,9 @@ function drawLetter(posx, posy, letterData) {
   ellipse(pos2x, pos2y, size2, size2);
   pop();
 
-  line(posx - 50, posy, posx - 50, posy - lineLeftHeight);
+  line(posx - 50, posy + lineLeftY1, posx - 50, posy - lineLeftY2);
+  line(posx + 50, posy + lineRightY1, posx + 50, posy - lineRightY2);
+
 }
 
 function keyTyped() {
