@@ -18,9 +18,6 @@ const letterA = {
   "offsety": 0,
   "lerpColorAmt": 0.3,
   "lineLeft": 0,
-  "size2": 0,
-  "offsetx2": 0,
-  "offsety2": 0
 }
 
 const letterB = {
@@ -28,10 +25,7 @@ const letterB = {
   "offsetx": 0,
   "offsety": 0,
   "lerpColorAmt": 0.4,
-  "lineLeft": 150,
-  "size2": 0,
-  "offsetx2": 0,
-  "offsety2": 0
+  "lineLeft": 150
 }
 
 const letterC = {
@@ -40,8 +34,8 @@ const letterC = {
   "offsety": 0,
   "lerpColorAmt": 0.5,
   "lineLeft": 0,
-  "size2": 100,
-  "offsetx2": 25,
+  "size2": 60,
+  "offsetx2": 30,
   "offsety2": 0
 }
 
@@ -111,5 +105,4 @@ function keyTyped() {
   } else if (key == '@') {
     saveBlocksImages(true);
   }
-  
 }
