@@ -13,28 +13,40 @@ const canvasHeight = 500;
  */
 
 const letterA = {
-  "size": 80,
+  "size": 50,
   "offsetx": 0,
-  "offsety": 35
+  "offsety": 0,
+  "lerpColorAmt": 0.3,
+  "lineLeft": 0,
+  "size2": 0,
+  "offsetx2": 0,
+  "offsety2": 0
 }
 
 const letterB = {
-  "size": 150,
+  "size": 50,
   "offsetx": 0,
-  "offsety": -145
+  "offsety": 0,
+  "lerpColorAmt": 0.4,
+  "lineLeft": 150,
+  "size2": 0,
+  "offsetx2": 0,
+  "offsety2": 0
 }
 
 const letterC = {
-  "size": 100,
-  "offsetx": 30,
-  "offsety": 0
+  "size": 50,
+  "offsetx": 10,
+  "offsety": 0,
+  "lerpColorAmt": 0.5,
+  "lineLeft": 0,
+  "size2": 100,
+  "offsetx2": 25,
+  "offsety2": 0
 }
 
-const backgroundColor = "#acf2e7";
-
-const darkGreen = "#26b29d";
-const lightGreen = "#30dfc4";
-const strokeColor = "#0a2d27";
+const darkGrey = "#241F1D";
+const salmon = "#F2755E";
 
 function setup() {
   // create the drawing canvas, save the canvas element
@@ -42,8 +54,8 @@ function setup() {
   main_canvas.parent('canvasContainer');
 
   // color/stroke setup
-  stroke(strokeColor);
-  strokeWeight(4);
+  stroke(salmon);
+  strokeWeight(50);
 
   // with no animation, redrawing the screen is not necessary
   noLoop();
@@ -51,7 +63,7 @@ function setup() {
 
 function draw() {
   // clear screen
-  background(backgroundColor);
+  background(darkGrey);
 
   // compute the center of the canvas
   let center_x = canvasWidth / 2;
@@ -68,12 +80,29 @@ function drawLetter(posx, posy, letterData) {
   let size2 = letterData["size"];
   let pos2x = posx + letterData["offsetx"];
   let pos2y = posy + letterData["offsety"];
+  let size3 = letterData["size2"];
+  let pos3x = posx + letterData["offsetx2"];
+  let pos3y = posy + letterData["offsety2"];
+
+  //line variables
+  let colorMixVar = letterData["lerpColorAmt"];
+  let lineLeftHeight = letterData["lineLeft"];
+
+  let salmonCopy = color("#F2755E");
+  let darkGreyCopy = color("#241F1D");
+  let colorMix = lerpColor(salmonCopy, darkGreyCopy, colorMixVar);
 
   // draw two circles
-  fill(darkGreen);
+  push();
+  noStroke();
+  fill(salmon);
   ellipse(posx, posy, 150, 150);
-  fill(lightGreen);
+  fill(colorMix);
   ellipse(pos2x, pos2y, size2, size2);
+  ellipse(pos3x, pos3y, size3, size3);
+  pop();
+
+  line(posx-50, posy, posx-50, posy - lineLeftHeight);
 }
 
 function keyTyped() {
