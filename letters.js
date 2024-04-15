@@ -1,143 +1,245 @@
 const alphabet = {
   "default": {
-    "size": 40,
-    "offsetx": 0,
-    "offsety": 0
+    "hLine1XPos": 0,
+    "hLine1YPos": 0,
+    "hLine2XPos": 0,
+    "hLine2YPos": 100,
+    "hLine3XPos": 0,
+    "hLine3YPos": 50,
+    "hLine3Length": 50,
+    "vLine1XPos": 0,
+    "vLine1YPos": 0,
+    "vLine1Length": 100,
+    "vLine2XPos": 100,
+    "vLine2YPos": 0,
+    "vLine2Length": 100,
+    "vLine3XPos": 50,
+    "vLine3YPos": 0,
+    "vLine3Length": 50
   },
   "A": {
-    "size": 40,
-    "offsetx": 0,
-    "offsety": 17
+    "hLine1XPos": 0,
+    "hLine1YPos": 0,
+    "hLine2XPos": 0,
+    "hLine2YPos": 75,
+    "vLine1XPos": 0,
+    "vLine1YPos": 0,
+    "vLine1Length": 100,
+    "vLine2XPos": 100,
+    "vLine2YPos": 0,
+    "vLine2Length": 100
   },
   "B": {
-    "size": 75,
-    "offsetx": 0,
-    "offsety": -70
+    "hLine1XPos": 0,
+    "hLine1YPos": 25,
+    "hLine2XPos": 0,
+    "hLine2YPos": 100,
+    "vLine1XPos": 0,
+    "vLine1YPos": 0,
+    "vLine1Length": 100,
+    "vLine2XPos": 100,
+    "vLine2YPos": 25,
+    "vLine2Length": 75
   },
   "C": {
-    "size": 50,
-    "offsetx": 15,
-    "offsety": 0
+    "hLine1XPos": 0,
+    "hLine1YPos": 0,
+    "hLine2XPos": 0,
+    "hLine2YPos": 100,
+    "vLine1XPos": 0,
+    "vLine1YPos": 0,
+    "vLine1Length": 100,
+    "vLine2XPos": 100,
+    "vLine2YPos": 0
   },
   "D": {
-    "size": 50,
-    "offsetx": 15,
-    "offsety": 0
+    "hLine1XPos": 0,
+    "hLine1YPos": 25,
+    "hLine2XPos": 0,
+    "hLine2YPos": 100,
+    "vLine1XPos": 0,
+    "vLine1YPos": 25,
+    "vLine1Length": 75,
+    "vLine2XPos": 100,
+    "vLine2YPos": 0,
+    "vLine2Length": 100
   },
   "E": {
-    "size": 50,
-    "offsetx": 15,
-    "offsety": 0
+    "hLine1XPos": 0,
+    "hLine1YPos": 0,
+    "hLine2XPos": 0,
+    "hLine2YPos": 100,
+    "hLine3XPos": 0,
+    "hLine3YPos": 50,
+    "hLine3Length": 75,
+    "vLine1XPos": 0,
+    "vLine1YPos": 0,
+    "vLine1Length": 100
   },
   "F": {
-    "size": 50,
-    "offsetx": 15,
-    "offsety": 0
+    "hLine1XPos": 0,
+    "hLine1YPos": 0,
+    "hLine3XPos": 0,
+    "hLine3YPos": 50,
+    "hLine3Length": 75,
+    "vLine1XPos": 0,
+    "vLine1YPos": 0,
+    "vLine1Length": 100
   },
   "G": {
-    "size": 50,
-    "offsetx": 15,
-    "offsety": 0
+
   },
   "H": {
-    "size": 50,
-    "offsetx": 15,
-    "offsety": 0
+    "hLine3XPos": 0,
+    "hLine3YPos": 50,
+    "hLine3Length": 100,
+    "vLine1XPos": 0,
+    "vLine1YPos": 0,
+    "vLine1Length": 100,
+    "vLine2XPos": 100,
+    "vLine2YPos": 0,
+    "vLine2Length": 100
   },
   "I": {
-    "size": 50,
-    "offsetx": 15,
-    "offsety": 0
+    "vLine3XPos": 50,
+    "vLine3YPos": 0,
+    "vLine3Length": 100
   },
   "J": {
-    "size": 50,
-    "offsetx": 15,
-    "offsety": 0
+    "hLine2XPos": 0,
+    "hLine2YPos": 100,
+    "vLine2XPos": 100,
+    "vLine2YPos": 0,
+    "vLine2Length": 100,
   },
   "K": {
-    "size": 50,
-    "offsetx": 15,
-    "offsety": 0
+
   },
   "L": {
-    "size": 50,
-    "offsetx": 15,
-    "offsety": 0
+    "hLine2XPos": 0,
+    "hLine2YPos": 100,
+    "vLine1XPos": 0,
+    "vLine1YPos": 0,
+    "vLine1Length": 100
   },
   "M": {
-    "size": 50,
-    "offsetx": 15,
-    "offsety": 0
+    "hLine1XPos": 0,
+    "hLine1YPos": 0,
+    "vLine1XPos": 0,
+    "vLine1YPos": 0,
+    "vLine1Length": 100,
+    "vLine2XPos": 100,
+    "vLine2YPos": 0,
+    "vLine2Length": 100,
+    "vLine3XPos": 50,
+    "vLine3YPos": 0,
+    "vLine3Length": 75
   },
   "N": {
-    "size": 50,
-    "offsetx": 15,
-    "offsety": 0
+
   },
   "O": {
-    "size": 50,
-    "offsetx": 15,
-    "offsety": 0
+    "hLine1XPos": 0,
+    "hLine1YPos": 0,
+    "hLine2XPos": 0,
+    "hLine2YPos": 100,
+    "vLine1XPos": 0,
+    "vLine1YPos": 0,
+    "vLine1Length": 100,
+    "vLine2XPos": 100,
+    "vLine2YPos": 0,
+    "vLine2Length": 100
   },
   "P": {
-    "size": 50,
-    "offsetx": 15,
-    "offsety": 0
+    "hLine1XPos": 0,
+    "hLine1YPos": 0,
+    "hLine2XPos": 0,
+    "hLine2YPos": 75,
+    "vLine1XPos": 0,
+    "vLine1YPos": 0,
+    "vLine1Length": 100,
+    "vLine2XPos": 100,
+    "vLine2YPos": 0,
+    "vLine2Length": 75
   },
   "Q": {
-    "size": 50,
-    "offsetx": 15,
-    "offsety": 0
+    "hLine1XPos": 0,
+    "hLine1YPos": 0,
+    "hLine2XPos": 0,
+    "hLine2YPos": 100,
+    "vLine1XPos": 0,
+    "vLine1YPos": 0,
+    "vLine1Length": 100,
+    "vLine2XPos": 100,
+    "vLine2YPos": 0,
+    "vLine2Length": 100,
+    "vLine3XPos": 50,
+    "vLine3YPos": 50,
+    "vLine3Length": 50
   },
   "R": {
-    "size": 50,
-    "offsetx": 15,
-    "offsety": 0
+
   },
   "S": {
-    "size": 50,
-    "offsetx": 15,
-    "offsety": 0
+    "hLine1XPos": 0,
+    "hLine1YPos": 0,
+    "hLine2XPos": 0,
+    "hLine2YPos": 100,
+    "hLine3XPos": 0,
+    "hLine3YPos": 50,
+    "hLine3Length": 100,
+    "vLine1XPos": 0,
+    "vLine1YPos": 0,
+    "vLine1Length": 50,
+    "vLine2XPos": 100,
+    "vLine2YPos": 50,
+    "vLine2Length": 50
   },
   "T": {
-    "size": 50,
-    "offsetx": 15,
-    "offsety": 0
+    "hLine1XPos": 0,
+    "hLine1YPos": 0,
+    "hLine3Length": 50,
+    "vLine3XPos": 50,
+    "vLine3YPos": 0,
+    "vLine3Length": 100
   },
   "U": {
-    "size": 50,
-    "offsetx": 15,
-    "offsety": 0
+    "hLine2XPos": 0,
+    "hLine2YPos": 100,
+    "vLine1XPos": 0,
+    "vLine1YPos": 0,
+    "vLine1Length": 100,
+    "vLine2XPos": 100,
+    "vLine2YPos": 0,
+    "vLine2Length": 100
   },
   "V": {
-    "size": 50,
-    "offsetx": 15,
-    "offsety": 0
+
   },
   "W": {
-    "size": 50,
-    "offsetx": 15,
-    "offsety": 0
+    "hLine2XPos": 0,
+    "hLine2YPos": 100,
+    "vLine1XPos": 0,
+    "vLine1YPos": 0,
+    "vLine1Length": 100,
+    "vLine2XPos": 100,
+    "vLine2YPos": 0,
+    "vLine2Length": 100,
+    "vLine3XPos": 50,
+    "vLine3YPos": 25,
+    "vLine3Length": 75
   },
   "X": {
-    "size": 50,
-    "offsetx": 15,
-    "offsety": 0
+
   },
   "Y": {
-    "size": 50,
-    "offsetx": 15,
-    "offsety": 0
+
   },
   "Z": {
-    "size": 50,
-    "offsetx": 15,
-    "offsety": 0
+
   },
   "0": {
-    "size": 40,
-    "offsetx": 0,
-    "offsety": 17
+
   },
   "1": {
     "size": 40,
