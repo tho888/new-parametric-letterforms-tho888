@@ -72,9 +72,29 @@ function drawLetter(letterData) {
 
 function interpolate_letter(percent, oldObj, newObj) {
   let new_letter = {};
-  new_letter["size"]    = map(percent, 0, 100, oldObj["size"], newObj["size"]);
-  new_letter["offsetx"] = map(percent, 0, 100, oldObj["offsetx"], newObj["offsetx"]);
-  new_letter["offsety"] = map(percent, 0, 100, oldObj["offsety"], newObj["offsety"]);
+  new_letter["hLine1XPos"]    = map(percent, 0, 100, oldObj["hLine1XPos"], newObj["hLine1XPos"]);
+  new_letter["hLine1YPos"] = map(percent, 0, 100, oldObj["hLine1YPos"], newObj["hLine1YPos"]);
+  new_letter["hLine2XPos"] = map(percent, 0, 100, oldObj["hLine2XPos"], newObj["hLine2XPos"]);
+  new_letter["hLine2YPos"] = map(percent, 0, 100, oldObj["hLine2YPos"], newObj["hLine2YPos"]);
+  new_letter["hLine3XPos"] = map(percent, 0, 100, oldObj["hLine3XPos"], newObj["hLine3XPos"]);
+  new_letter["hLine3YPos"] = map(percent, 0, 100, oldObj["hLine3YPos"], newObj["hLine3YPos"]);
+  new_letter["hLine3Length"] = map(percent, 0, 100, oldObj["hLine3Length"], newObj["hLine3Length"]);
+  new_letter["vLine1XPos"] = map(percent, 0, 100, oldObj["vLine1XPos"], newObj["vLine1XPos"]);
+  new_letter["vLine1YPos"] = map(percent, 0, 100, oldObj["vLine1YPos"], newObj["vLine1YPos"]);
+  new_letter["vLine1Length"] = map(percent, 0, 100, oldObj["vLine1Length"], newObj["vLine1Length"]);
+  new_letter["vLine2XPos"] = map(percent, 0, 100, oldObj["vLine2XPos"], newObj["vLine2XPos"]);
+  new_letter["vLine2YPos"] = map(percent, 0, 100, oldObj["vLine2YPos"], newObj["vLine2YPos"]);
+  new_letter["vLine2Length"] = map(percent, 0, 100, oldObj["vLine2Length"], newObj["vLine2Length"]);
+  new_letter["vLine3XPos"] = map(percent, 0, 100, oldObj["vLine3XPos"], newObj["vLine3XPos"]);
+  new_letter["vLine3YPos"] = map(percent, 0, 100, oldObj["vLine3YPos"], newObj["vLine3YPos"]);
+  new_letter["vLine3Length"] = map(percent, 0, 100, oldObj["vLine3Length"], newObj["vLine3Length"]);
+  new_letter["dLine1XPos"] = map(percent, 0, 100, oldObj["dLine1XPos"], newObj["dLine1XPos"]);
+  new_letter["dLine1YPos"] = map(percent, 0, 100, oldObj["dLine1YPos"], newObj["dLine1YPos"]);
+  new_letter["dLine1Length"] = map(percent, 0, 100, oldObj["dLine1Length"], newObj["dLine1Length"]);
+  new_letter["dLine2XPos"] = map(percent, 0, 100, oldObj["dLine2XPos"], newObj["dLine2XPos"]);
+  new_letter["dLine2YPos"] = map(percent, 0, 100, oldObj["dLine2YPos"], newObj["dLine2YPos"]);
+  new_letter["dLine2Length"] = map(percent, 0, 100, oldObj["dLine2Length"], newObj["dLine2Length"]);
+
   return new_letter;
 }
 
