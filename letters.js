@@ -15,7 +15,13 @@ const alphabet = {
     "vLine2Length": 100,
     "vLine3XPos": 50,
     "vLine3YPos": 0,
-    "vLine3Length": 50
+    "vLine3Length": 50,
+    "dLine1XPos": 0,
+    "dLine1YPos": 0,
+    "dLine1Length": 100,
+    "dLine2XPos": 100,
+    "dLine2YPos": 0,
+    "dLine2Length": 100
   },
   "A": {
     "hLine1XPos": 0,
@@ -87,7 +93,19 @@ const alphabet = {
     "vLine1Length": 100
   },
   "G": {
-
+    "hLine1XPos": 0,
+    "hLine1YPos": 0,
+    "hLine2XPos": 0,
+    "hLine2YPos": 100,
+    "hLine3XPos": 50,
+    "hLine3YPos": 50,
+    "hLine3Length": 50,
+    "vLine1XPos": 0,
+    "vLine1YPos": 0,
+    "vLine1Length": 100,
+    "vLine2XPos": 100,
+    "vLine2YPos": 50,
+    "vLine2Length": 50
   },
   "H": {
     "hLine3XPos": 0,
@@ -230,13 +248,32 @@ const alphabet = {
     "vLine3Length": 75
   },
   "X": {
-
+    "dLine1XPos": 0,
+    "dLine1YPos": 0,
+    "dLine1Length": 100,
+    "dLine2XPos": 100,
+    "dLine2YPos": 0,
+    "dLine2Length": 100
   },
   "Y": {
-
+    "vLine3XPos": 50,
+    "vLine3YPos": 50,
+    "vLine3Length": 50,
+    "dLine1XPos": 0,
+    "dLine1YPos": 0,
+    "dLine1Length": 50,
+    "dLine2XPos": 100,
+    "dLine2YPos": 0,
+    "dLine2Length": 50
   },
   "Z": {
-
+    "hLine1XPos": 0,
+    "hLine1YPos": 0,
+    "hLine2XPos": 0,
+    "hLine2YPos": 100,
+    "dLine2XPos": 100,
+    "dLine2YPos": 0,
+    "dLine2Length": 100
   },
   "0": {
 

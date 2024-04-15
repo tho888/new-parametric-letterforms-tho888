@@ -43,6 +43,15 @@ function drawLetter(letterData) {
   let vLine3XPos = 0 + letterData["vLine3XPos"];
   let vLine3YPos = 0 + letterData["vLine3YPos"];
   let vLine3Length = 0 + letterData["vLine3Length"];
+
+  // diagonal line parameters
+  let dLine1XPos = 0 + letterData["dLine1XPos"];
+  let dLine1YPos = 0 + letterData["dLine1YPos"];
+  let dLine1Length = 0 + letterData["dLine1Length"];
+  let dLine2XPos = 0 + letterData["dLine2XPos"];
+  let dLine2YPos = 0 + letterData["dLine2YPos"];
+  let dLine2Length = 0 + letterData["dLine2Length"];
+
   
   // draw horizontal lines
   line(hLine1XPos, hLine1YPos, 100 + hLine1XPos, hLine1YPos);
@@ -53,6 +62,10 @@ function drawLetter(letterData) {
   line(vLine1XPos, vLine1YPos, vLine1XPos, vLine1Length + vLine1YPos);
   line(vLine2XPos, vLine2YPos, vLine2XPos, vLine2Length + vLine2YPos);
   line(vLine3XPos, vLine3YPos, vLine3XPos, vLine3Length + vLine3YPos);
+
+  // draw diagonal lines
+  line(dLine1XPos, dLine1YPos, dLine1Length + dLine1XPos, dLine1Length + dLine1YPos);
+  line(dLine2XPos, dLine2YPos, dLine2XPos - dLine2Length, dLine2Length + dLine2YPos);
 
   pop();
 }
