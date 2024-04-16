@@ -22,34 +22,34 @@ function drawLetter(letterData) {
   // colour variables
   fill(darkGrey);
   stroke(darkGrey);
-  strokeWeight(20);
+  strokeWeight(10);
 
   // horizontal line parameters
   let hLine1XPos = 0 + letterData["hLine1XPos"];
-  let hLine1YPos = 0 + letterData["hLine1YPos"];
+  let hLine1YPos = 100 + letterData["hLine1YPos"];
   let hLine2XPos = 0 + letterData["hLine2XPos"];
-  let hLine2YPos = 0 + letterData["hLine2YPos"];
+  let hLine2YPos = 100 + letterData["hLine2YPos"];
   let hLine3XPos = 0 + letterData["hLine3XPos"];
-  let hLine3YPos = 0 + letterData["hLine3YPos"];
+  let hLine3YPos = 100 + letterData["hLine3YPos"];
   let hLine3Length = 0 + letterData["hLine3Length"];
 
   // vertical line parameters
   let vLine1XPos = 0 + letterData["vLine1XPos"];
-  let vLine1YPos = 0 + letterData["vLine1YPos"];
+  let vLine1YPos = 100 + letterData["vLine1YPos"];
   let vLine1Length = 0 + letterData["vLine1Length"];
   let vLine2XPos = 0 + letterData["vLine2XPos"];
-  let vLine2YPos = 0 + letterData["vLine2YPos"];
+  let vLine2YPos = 100 + letterData["vLine2YPos"];
   let vLine2Length = 0 + letterData["vLine2Length"];
   let vLine3XPos = 0 + letterData["vLine3XPos"];
-  let vLine3YPos = 0 + letterData["vLine3YPos"];
+  let vLine3YPos = 100 + letterData["vLine3YPos"];
   let vLine3Length = 0 + letterData["vLine3Length"];
 
   // diagonal line parameters
   let dLine1XPos = 0 + letterData["dLine1XPos"];
-  let dLine1YPos = 0 + letterData["dLine1YPos"];
+  let dLine1YPos = 100 + letterData["dLine1YPos"];
   let dLine1Length = 0 + letterData["dLine1Length"];
   let dLine2XPos = 0 + letterData["dLine2XPos"];
-  let dLine2YPos = 0 + letterData["dLine2YPos"];
+  let dLine2YPos = 100 + letterData["dLine2YPos"];
   let dLine2Length = 0 + letterData["dLine2Length"];
 
   
