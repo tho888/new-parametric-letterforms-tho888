@@ -1,28 +1,21 @@
-/* these are optional special variables which will change the system */
+// system setup
 var systemBackgroundColor = "#aaa";
 var systemLineColor = "#fff";
-var systemBoxColor = "#999";
+var systemBoxColor = "#555";
 
-/* internal constants */
+// colour setup
 const darkGrey = "#241F1D";
 const salmon = "#F2755E";
 
-
-/*
- * Draw the letter given the letterData
- *
- * Letters should always be drawn with the
- * following bounding box guideline:
- * from (0,0) to (100, 200)
- */
 function drawLetter(letterData) {
 
   push();
 
-  // colour variables
+  // declaring colours
   fill(darkGrey);
   stroke(darkGrey);
   strokeWeight(10);
+  strokeCap(SQUARE);
 
   // horizontal line parameters
   let hLine1XPos = 0 + letterData["hLine1XPos"];
@@ -66,7 +59,6 @@ function drawLetter(letterData) {
   // draw diagonal lines
   line(dLine1XPos, dLine1YPos, dLine1Length + dLine1XPos, dLine1Length + dLine1YPos);
   line(dLine2XPos, dLine2YPos, dLine2XPos - dLine2Length, dLine2Length + dLine2YPos);
-
   pop();
 }
 
