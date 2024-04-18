@@ -47,7 +47,7 @@ function drawLetter(letterData) {
 
   
   // draw horizontal lines
-  line(hLine1XPos, hLine1YPos, 100 + hLine1XPos, hLine1YPos);
+  customLine();
   line(hLine2XPos, hLine2YPos, 100 + hLine2XPos, hLine2YPos);
   line(hLine3XPos, hLine3YPos, hLine3Length + hLine3XPos, hLine3YPos);
 
@@ -60,6 +60,20 @@ function drawLetter(letterData) {
   line(dLine1XPos, dLine1YPos, dLine1Length + dLine1XPos, dLine1Length + dLine1YPos);
   line(dLine2XPos, dLine2YPos, dLine2XPos - dLine2Length, dLine2Length + dLine2YPos);
   pop();
+
+  // custom line function to draw dotted line
+
+  function customLine() {
+    point(hLine1XPos, hLine1YPos);
+    point(hLine1XPos + 20, hLine1YPos);
+    point(hLine1XPos + 40, hLine1YPos);
+    point(hLine1XPos + 60, hLine1YPos);
+    point(hLine1XPos + 80, hLine1YPos);
+    point(hLine1XPos + 100, hLine1YPos);
+
+
+  }
+
 }
 
 function interpolate_letter(percent, oldObj, newObj) {

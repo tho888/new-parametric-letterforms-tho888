@@ -158,17 +158,6 @@ const alphabet = {
     "vLine1Length": 100
   },
   "M": {
-    // "hLine1XPos": 0,
-    // "hLine1YPos": 0,
-    // "vLine1XPos": 0,
-    // "vLine1YPos": 0,
-    // "vLine1Length": 100,
-    // "vLine2XPos": 100,
-    // "vLine2YPos": 0,
-    // "vLine2Length": 100,
-    // "vLine3XPos": 50,
-    // "vLine3YPos": 0,
-    // "vLine3Length": 75
     "vLine1XPos": 0,
     "vLine1YPos": 0,
     "vLine1Length": 100,
@@ -296,17 +285,6 @@ const alphabet = {
     "dLine2Length": 50
   },
   "W": {
-    // "hLine2XPos": 0,
-    // "hLine2YPos": 100,
-    // "vLine1XPos": 0,
-    // "vLine1YPos": 0,
-    // "vLine1Length": 100,
-    // "vLine2XPos": 100,
-    // "vLine2YPos": 0,
-    // "vLine2Length": 100,
-    // "vLine3XPos": 50,
-    // "vLine3YPos": 25,
-    // "vLine3Length": 75
     "vLine1XPos": 0,
     "vLine1YPos": 0,
     "vLine1Length": 100,
@@ -364,6 +342,9 @@ const alphabet = {
     "dLine2Length": 100
   },
   "1": {
+    "hLine3XPos": 0,
+    "hLine3YPos": 0,
+    "hLine3Length": 50,
     "vLine3XPos": 50,
     "vLine3YPos": 0,
     "vLine3Length": 100
