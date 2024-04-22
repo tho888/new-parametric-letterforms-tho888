@@ -48,6 +48,7 @@ function drawLetter(letterData) {
   
   // draw horizontal lines
   customLine();
+  // line(hLine1XPos, hLine1YPos, 100 + hLine1XPos, hLine1YPos)
   line(hLine2XPos, hLine2YPos, 100 + hLine2XPos, hLine2YPos);
   line(hLine3XPos, hLine3YPos, hLine3Length + hLine3XPos, hLine3YPos);
 
@@ -70,8 +71,6 @@ function drawLetter(letterData) {
     point(hLine1XPos + 60, hLine1YPos);
     point(hLine1XPos + 80, hLine1YPos);
     point(hLine1XPos + 100, hLine1YPos);
-
-
   }
 
 }
