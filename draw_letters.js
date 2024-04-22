@@ -1,7 +1,7 @@
 // system setup
-var systemBackgroundColor = "#aaa";
+var systemBackgroundColor = "#ccc";
 var systemLineColor = "#fff";
-var systemBoxColor = "#555";
+var systemBoxColor = "#999";
 
 // colour setup
 const darkGrey = "#241F1D";
@@ -15,91 +15,75 @@ function drawLetter(letterData) {
   fill(darkGrey);
   stroke(darkGrey);
   strokeWeight(10);
-  strokeCap(SQUARE);
+  strokeCap(ROUND);
 
   // horizontal line parameters
-  let hLine1XPos = 0 + letterData["hLine1XPos"];
-  let hLine1YPos = 100 + letterData["hLine1YPos"];
-  let hLine2XPos = 0 + letterData["hLine2XPos"];
-  let hLine2YPos = 100 + letterData["hLine2YPos"];
-  let hLine3XPos = 0 + letterData["hLine3XPos"];
-  let hLine3YPos = 100 + letterData["hLine3YPos"];
-  let hLine3Length = 0 + letterData["hLine3Length"];
+  let line1YPos = 0 + letterData["line1YPos"];
+  let line1Length = 0 + letterData["line1Length"];
+  let line2YPos = 0 + letterData["line2YPos"];
+  let line2Length = 0 + letterData["line2Length"];
+  let line2Shift = 0 + letterData["line2Shift"];
+  let line3YPos = 0 + letterData["line3YPos"];
+  let line3Length = 0 + letterData["line3Length"];
 
   // vertical line parameters
-  let vLine1XPos = 0 + letterData["vLine1XPos"];
-  let vLine1YPos = 100 + letterData["vLine1YPos"];
-  let vLine1Length = 0 + letterData["vLine1Length"];
-  let vLine2XPos = 0 + letterData["vLine2XPos"];
-  let vLine2YPos = 100 + letterData["vLine2YPos"];
-  let vLine2Length = 0 + letterData["vLine2Length"];
-  let vLine3XPos = 0 + letterData["vLine3XPos"];
-  let vLine3YPos = 100 + letterData["vLine3YPos"];
-  let vLine3Length = 0 + letterData["vLine3Length"];
+  let line4XPos = 0 + letterData["line4XPos"];
+  let line4Length = 0 + letterData["line4Length"];
+  let line5XPos = 0 + letterData["line5XPos"];
+  let line5Length = 0 + letterData["line5Length"];
+  let line5Shift = 0 + letterData["line5Shift"];
+  let line6Length = 0 + letterData["line6Length"];
 
   // diagonal line parameters
-  let dLine1XPos = 0 + letterData["dLine1XPos"];
-  let dLine1YPos = 100 + letterData["dLine1YPos"];
-  let dLine1Length = 0 + letterData["dLine1Length"];
-  let dLine2XPos = 0 + letterData["dLine2XPos"];
-  let dLine2YPos = 100 + letterData["dLine2YPos"];
-  let dLine2Length = 0 + letterData["dLine2Length"];
+  let line7XPos = 0 + letterData["line7XPos"];
+  let line7YPos = 0 + letterData["line7YPos"];
+  let line7Length = 0 + letterData["line7Length"];
+  let line8XPos = 0 + letterData["line8XPos"];
+  let line8YPos = 0 + letterData["line8YPos"];
+  let line8Length = 0 + letterData["line8Length"];
 
   
   // draw horizontal lines
-  customLine();
-  // line(hLine1XPos, hLine1YPos, 100 + hLine1XPos, hLine1YPos)
-  line(hLine2XPos, hLine2YPos, 100 + hLine2XPos, hLine2YPos);
-  line(hLine3XPos, hLine3YPos, hLine3Length + hLine3XPos, hLine3YPos);
+  line(0, line1YPos, line1Length, line1YPos);
+  line(line2Shift, line2YPos, line2Length + line2Shift, line2YPos);
+  line(0, line3YPos, line3Length, line3YPos);
 
   // draw vertical lines
-  line(vLine1XPos, vLine1YPos, vLine1XPos, vLine1Length + vLine1YPos);
-  line(vLine2XPos, vLine2YPos, vLine2XPos, vLine2Length + vLine2YPos);
-  line(vLine3XPos, vLine3YPos, vLine3XPos, vLine3Length + vLine3YPos);
+  line(line4XPos, 0, line4XPos, line4Length);
+  line(line5XPos, line5Shift, line5XPos, line5Length + line5Shift);
+  line(50, 50, 50, line6Length);
 
   // draw diagonal lines
-  line(dLine1XPos, dLine1YPos, dLine1Length + dLine1XPos, dLine1Length + dLine1YPos);
-  line(dLine2XPos, dLine2YPos, dLine2XPos - dLine2Length, dLine2Length + dLine2YPos);
+  // stroke(salmon);
+  line(line7XPos, line7YPos, line7Length + line7XPos, line7Length + line7YPos);
+  line(line8XPos, line8YPos, line8XPos - line8Length, line8Length + line8YPos);
+
+
+
   pop();
-
-  // custom line function to draw dotted line
-
-  function customLine() {
-    point(hLine1XPos, hLine1YPos);
-    point(hLine1XPos + 20, hLine1YPos);
-    point(hLine1XPos + 40, hLine1YPos);
-    point(hLine1XPos + 60, hLine1YPos);
-    point(hLine1XPos + 80, hLine1YPos);
-    point(hLine1XPos + 100, hLine1YPos);
-  }
-
 }
 
 function interpolate_letter(percent, oldObj, newObj) {
   let new_letter = {};
-  new_letter["hLine1XPos"]    = map(percent, 0, 100, oldObj["hLine1XPos"], newObj["hLine1XPos"]);
-  new_letter["hLine1YPos"] = map(percent, 0, 100, oldObj["hLine1YPos"], newObj["hLine1YPos"]);
-  new_letter["hLine2XPos"] = map(percent, 0, 100, oldObj["hLine2XPos"], newObj["hLine2XPos"]);
-  new_letter["hLine2YPos"] = map(percent, 0, 100, oldObj["hLine2YPos"], newObj["hLine2YPos"]);
-  new_letter["hLine3XPos"] = map(percent, 0, 100, oldObj["hLine3XPos"], newObj["hLine3XPos"]);
-  new_letter["hLine3YPos"] = map(percent, 0, 100, oldObj["hLine3YPos"], newObj["hLine3YPos"]);
-  new_letter["hLine3Length"] = map(percent, 0, 100, oldObj["hLine3Length"], newObj["hLine3Length"]);
-  new_letter["vLine1XPos"] = map(percent, 0, 100, oldObj["vLine1XPos"], newObj["vLine1XPos"]);
-  new_letter["vLine1YPos"] = map(percent, 0, 100, oldObj["vLine1YPos"], newObj["vLine1YPos"]);
-  new_letter["vLine1Length"] = map(percent, 0, 100, oldObj["vLine1Length"], newObj["vLine1Length"]);
-  new_letter["vLine2XPos"] = map(percent, 0, 100, oldObj["vLine2XPos"], newObj["vLine2XPos"]);
-  new_letter["vLine2YPos"] = map(percent, 0, 100, oldObj["vLine2YPos"], newObj["vLine2YPos"]);
-  new_letter["vLine2Length"] = map(percent, 0, 100, oldObj["vLine2Length"], newObj["vLine2Length"]);
-  new_letter["vLine3XPos"] = map(percent, 0, 100, oldObj["vLine3XPos"], newObj["vLine3XPos"]);
-  new_letter["vLine3YPos"] = map(percent, 0, 100, oldObj["vLine3YPos"], newObj["vLine3YPos"]);
-  new_letter["vLine3Length"] = map(percent, 0, 100, oldObj["vLine3Length"], newObj["vLine3Length"]);
-  new_letter["dLine1XPos"] = map(percent, 0, 100, oldObj["dLine1XPos"], newObj["dLine1XPos"]);
-  new_letter["dLine1YPos"] = map(percent, 0, 100, oldObj["dLine1YPos"], newObj["dLine1YPos"]);
-  new_letter["dLine1Length"] = map(percent, 0, 100, oldObj["dLine1Length"], newObj["dLine1Length"]);
-  new_letter["dLine2XPos"] = map(percent, 0, 100, oldObj["dLine2XPos"], newObj["dLine2XPos"]);
-  new_letter["dLine2YPos"] = map(percent, 0, 100, oldObj["dLine2YPos"], newObj["dLine2YPos"]);
-  new_letter["dLine2Length"] = map(percent, 0, 100, oldObj["dLine2Length"], newObj["dLine2Length"]);
-
+  new_letter["line1YPos"]    = map(percent, 0, 100, oldObj["line1YPos"], newObj["line1YPos"]);
+  new_letter["line1Length"] = map(percent, 0, 100, oldObj["line1Length"], newObj["line1Length"]);
+  new_letter["line2YPos"] = map(percent, 0, 100, oldObj["line2YPos"], newObj["line2YPos"]);
+  new_letter["line2Length"] = map(percent, 0, 100, oldObj["line2Length"], newObj["line2Length"]);
+  new_letter["line2Shift"] = map(percent, 0, 100, oldObj["line2Shift"], newObj["line2Shift"]);
+  new_letter["line3YPos"] = map(percent, 0, 100, oldObj["line3YPos"], newObj["line3YPos"]);
+  new_letter["line3Length"] = map(percent, 0, 100, oldObj["line3Length"], newObj["line3Length"]);
+  new_letter["line4XPos"] = map(percent, 0, 100, oldObj["line4XPos"], newObj["line4XPos"]);
+  new_letter["line4Length"] = map(percent, 0, 100, oldObj["line4Length"], newObj["line4Length"]);
+  new_letter["line5XPos"] = map(percent, 0, 100, oldObj["line5XPos"], newObj["line5XPos"]);
+  new_letter["line5Length"] = map(percent, 0, 100, oldObj["line5Length"], newObj["line5Length"]);
+  new_letter["line5Shift"] = map(percent, 0, 100, oldObj["line5Shift"], newObj["line5Shift"]);
+  new_letter["line6Length"] = map(percent, 0, 100, oldObj["line6Length"], newObj["line6Length"]);
+  new_letter["line7XPos"] = map(percent, 0, 100, oldObj["line7XPos"], newObj["line7XPos"]);
+  new_letter["line7YPos"] = map(percent, 0, 100, oldObj["line7YPos"], newObj["line7YPos"]);
+  new_letter["line7Length"] = map(percent, 0, 100, oldObj["line7Length"], newObj["line7Length"]);
+  new_letter["line8XPos"] = map(percent, 0, 100, oldObj["line8XPos"], newObj["line8XPos"]);
+  new_letter["line8YPos"] = map(percent, 0, 100, oldObj["line8YPos"], newObj["line8YPos"]);
+  new_letter["line8Length"] = map(percent, 0, 100, oldObj["line8Length"], newObj["line8Length"]);
   return new_letter;
 }
 
