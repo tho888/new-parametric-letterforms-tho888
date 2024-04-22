@@ -6,16 +6,15 @@ var systemBoxColor = "#999";
 // colour setup
 const darkGrey = "#241F1D";
 const salmon = "#F2755E";
+const darkCyan = "#0D8AA1";
 
 function drawLetter(letterData) {
 
   push();
 
-  // declaring colours
-  fill(darkGrey);
-  stroke(darkGrey);
+  // stroke setup
   strokeWeight(10);
-  strokeCap(ROUND);
+  strokeCap(SQUARE);
 
   // horizontal line parameters
   let line1YPos = 0 + letterData["line1YPos"];
@@ -42,21 +41,23 @@ function drawLetter(letterData) {
   let line8YPos = 0 + letterData["line8YPos"];
   let line8Length = 0 + letterData["line8Length"];
 
-  
-  // draw horizontal lines
+  // draw diagonal lines
+  stroke(darkCyan);
+  line(line7XPos, line7YPos, line7Length + line7XPos, line7Length + line7YPos);
+  line(line8XPos, line8YPos, line8XPos - line8Length, line8Length + line8YPos);
+
+  // draw horizonal lines
+  stroke(salmon);
   line(0, line1YPos, line1Length, line1YPos);
   line(line2Shift, line2YPos, line2Length + line2Shift, line2YPos);
   line(0, line3YPos, line3Length, line3YPos);
 
   // draw vertical lines
+  stroke(darkGrey);
   line(line4XPos, 0, line4XPos, line4Length);
   line(line5XPos, line5Shift, line5XPos, line5Length + line5Shift);
   line(50, 50, 50, line6Length);
 
-  // draw diagonal lines
-  // stroke(salmon);
-  line(line7XPos, line7YPos, line7Length + line7XPos, line7Length + line7YPos);
-  line(line8XPos, line8YPos, line8XPos - line8Length, line8Length + line8YPos);
 
 
 
@@ -65,7 +66,7 @@ function drawLetter(letterData) {
 
 function interpolate_letter(percent, oldObj, newObj) {
   let new_letter = {};
-  new_letter["line1YPos"]    = map(percent, 0, 100, oldObj["line1YPos"], newObj["line1YPos"]);
+  new_letter["line1YPos"] = map(percent, 0, 100, oldObj["line1YPos"], newObj["line1YPos"]);
   new_letter["line1Length"] = map(percent, 0, 100, oldObj["line1Length"], newObj["line1Length"]);
   new_letter["line2YPos"] = map(percent, 0, 100, oldObj["line2YPos"], newObj["line2YPos"]);
   new_letter["line2Length"] = map(percent, 0, 100, oldObj["line2Length"], newObj["line2Length"]);

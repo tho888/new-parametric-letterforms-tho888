@@ -19,8 +19,8 @@ const alphabet = {
     "line8XPos": 100,
     "line8YPos": 0,
     "line8Length": 100,
-    // VAR018
-    // VAR019
+    // VAR_20
+
   },
   "A": {
     "line1YPos": 0,
@@ -28,7 +28,7 @@ const alphabet = {
     "line2YPos": 50,
     "line2Length": 100,
     "line2Shift": 0,
-    "line3YPos": 50,
+    "line3YPos": 100,
     "line3Length": 0,
     "line4XPos": 0,
     "line4Length": 100,
@@ -42,8 +42,8 @@ const alphabet = {
     "line8XPos": 100,
     "line8YPos": 0,
     "line8Length": 0,
-    // VAR018
-    // VAR019
+    // VAR_20
+
   },
   "B": {
     "line1YPos": 0,
@@ -65,8 +65,8 @@ const alphabet = {
     "line8XPos": 100,
     "line8YPos": 0,
     "line8Length": 0,
-    // VAR018
-    // VAR019
+    // VAR_20
+
   },
   "C": {
     "line1YPos": 0,
@@ -88,8 +88,8 @@ const alphabet = {
     "line8XPos": 100,
     "line8YPos": 0,
     "line8Length": 0,
-    // VAR018
-    // VAR019
+    // VAR_20
+
   },
   "D": {
     "line1YPos": 0,
@@ -111,8 +111,8 @@ const alphabet = {
     "line8XPos": 100,
     "line8YPos": 0,
     "line8Length": 0,
-    // VAR018
-    // VAR019
+    // VAR_20
+
   },
   "E": {
     "line1YPos": 0,
@@ -134,8 +134,8 @@ const alphabet = {
     "line8XPos": 100,
     "line8YPos": 0,
     "line8Length": 0,
-    // VAR018
-    // VAR019
+    // VAR_20
+
   },
   "F": {
     "line1YPos": 0,
@@ -143,7 +143,7 @@ const alphabet = {
     "line2YPos": 50,
     "line2Length": 50,
     "line2Shift": 0,
-    "line3YPos": 0,
+    "line3YPos": 100,
     "line3Length": 0,
     "line4XPos": 0,
     "line4Length": 100,
@@ -157,8 +157,8 @@ const alphabet = {
     "line8XPos": 100,
     "line8YPos": 0,
     "line8Length": 0,
-    // VAR018
-    // VAR019
+    // VAR_20
+
   },
   "G": {
     "line1YPos": 0,
@@ -180,8 +180,8 @@ const alphabet = {
     "line8XPos": 100,
     "line8YPos": 0,
     "line8Length": 0,
-    // VAR018
-    // VAR019
+    // VAR_20
+
   },
   "H": {
     "line1YPos": 50,
@@ -189,7 +189,7 @@ const alphabet = {
     "line2YPos": 50,
     "line2Length": 100,
     "line2Shift": 0,
-    "line3YPos": 50,
+    "line3YPos": 100,
     "line3Length": 0,
     "line4XPos": 0,
     "line4Length": 100,
@@ -203,8 +203,8 @@ const alphabet = {
     "line8XPos": 100,
     "line8YPos": 0,
     "line8Length": 0,
-    // VAR018
-    // VAR019
+    // VAR_20
+
   },
   "I": {
     "line1YPos": 0,
@@ -226,8 +226,8 @@ const alphabet = {
     "line8XPos": 100,
     "line8YPos": 0,
     "line8Length": 0,
-    // VAR018
-    // VAR019
+    // VAR_20
+
   },
   "J": {
     "line1YPos": 100,
@@ -249,8 +249,8 @@ const alphabet = {
     "line8XPos": 100,
     "line8YPos": 0,
     "line8Length": 0,
-    // VAR018
-    // VAR019
+    // VAR_20
+
   },
   "K": {
     "line1YPos": 50,
@@ -258,7 +258,7 @@ const alphabet = {
     "line2YPos": 50,
     "line2Length": 50,
     "line2Shift": 0,
-    "line3YPos": 50,
+    "line3YPos": 100,
     "line3Length": 0,
     "line4XPos": 0,
     "line4Length": 100,
@@ -272,8 +272,8 @@ const alphabet = {
     "line8XPos": 100,
     "line8YPos": 0,
     "line8Length": 50,
-    // VAR018
-    // VAR019
+    // VAR_20
+
   },
   "L": {
     "line1YPos": 100,
@@ -295,8 +295,8 @@ const alphabet = {
     "line8XPos": 0,
     "line8YPos": 0,
     "line8Length": 0,
-    // VAR018
-    // VAR019
+    // VAR_20
+
   },
   "M": {
     "line1YPos": 0,
@@ -318,8 +318,8 @@ const alphabet = {
     "line8XPos": 100,
     "line8YPos": 0,
     "line8Length": 50,
-    // VAR018
-    // VAR019
+    // VAR_20
+
   },
   "N": {
     "line1YPos": 0,
@@ -341,8 +341,8 @@ const alphabet = {
     "line8XPos": 100,
     "line8YPos": 0,
     "line8Length": 0,
-    // VAR018
-    // VAR019
+    // VAR_20
+
   },
   "O": {
     "line1YPos": 0,
@@ -364,8 +364,8 @@ const alphabet = {
     "line8XPos": 100,
     "line8YPos": 0,
     "line8Length": 0,
-    // VAR018
-    // VAR019
+    // VAR_20
+
   },
   "P": {
     "line1YPos": 0,
@@ -387,8 +387,8 @@ const alphabet = {
     "line8XPos": 100,
     "line8YPos": 0,
     "line8Length": 0,
-    // VAR018
-    // VAR019
+    // VAR_20
+
   },
   "Q": {
     "line1YPos": 0,
@@ -410,8 +410,8 @@ const alphabet = {
     "line8XPos": 100,
     "line8YPos": 0,
     "line8Length": 0,
-    // VAR018
-    // VAR019
+    // VAR_20
+
   },
   "R": {
     "line1YPos": 0,
@@ -433,8 +433,8 @@ const alphabet = {
     "line8XPos": 100,
     "line8YPos": 0,
     "line8Length": 0,
-    // VAR018
-    // VAR019
+    // VAR_20
+
   },
   "S": {
     "line1YPos": 0,
@@ -456,8 +456,8 @@ const alphabet = {
     "line8XPos": 100,
     "line8YPos": 0,
     "line8Length": 0,
-    // VAR018
-    // VAR019
+    // VAR_20
+
   },
   "T": {
     "line1YPos": 0,
@@ -479,8 +479,8 @@ const alphabet = {
     "line8XPos": 100,
     "line8YPos": 0,
     "line8Length": 0,
-    // VAR018
-    // VAR019
+    // VAR_20
+
   },
   "U": {
     "line1YPos": 100,
@@ -502,8 +502,8 @@ const alphabet = {
     "line8XPos": 100,
     "line8YPos": 0,
     "line8Length": 0,
-    // VAR018
-    // VAR019
+    // VAR_20
+
   },
   "V": {
     "line1YPos": 0,
@@ -525,8 +525,8 @@ const alphabet = {
     "line8XPos": 100,
     "line8YPos": 50,
     "line8Length": 50,
-    // VAR018
-    // VAR019
+    // VAR_20
+
   },
   "W": {
     "line1YPos": 0,
@@ -548,8 +548,8 @@ const alphabet = {
     "line8XPos": 50,
     "line8YPos": 50,
     "line8Length": 50,
-    // VAR018
-    // VAR019
+    // VAR_20
+
   },
   "X": {
     "line1YPos": 0,
@@ -571,8 +571,8 @@ const alphabet = {
     "line8XPos": 100,
     "line8YPos": 0,
     "line8Length": 100,
-    // VAR018
-    // VAR019
+    // VAR_20
+
   },
   "Y": {
     "line1YPos": 0,
@@ -594,8 +594,8 @@ const alphabet = {
     "line8XPos": 100,
     "line8YPos": 0,
     "line8Length": 50,
-    // VAR018
-    // VAR019
+    // VAR_20
+
   },
   "Z": {
     "line1YPos": 0,
@@ -617,8 +617,8 @@ const alphabet = {
     "line8XPos": 100,
     "line8YPos": 0,
     "line8Length": 100,
-    // VAR018
-    // VAR019
+    // VAR_20
+
   },
   "0": {
     "line1YPos": 0,
@@ -640,8 +640,8 @@ const alphabet = {
     "line8XPos": 100,
     "line8YPos": 0,
     "line8Length": 100,
-    // VAR018
-    // VAR019
+    // VAR_20
+
   },
   "1": {
     "line1YPos": 0,
@@ -663,8 +663,8 @@ const alphabet = {
     "line8XPos": 50,
     "line8YPos": 0,
     "line8Length": 0,
-    // VAR018
-    // VAR019
+    // VAR_20
+
   },
   "2": {
     "line1YPos": 0,
@@ -686,8 +686,8 @@ const alphabet = {
     "line8XPos": 100,
     "line8YPos": 0,
     "line8Length": 0,
-    // VAR018
-    // VAR019
+    // VAR_20
+
   },
   "3": {
     "line1YPos": 0,
@@ -709,8 +709,8 @@ const alphabet = {
     "line8XPos": 100,
     "line8YPos": 0,
     "line8Length": 0,
-    // VAR018
-    // VAR019
+    // VAR_20
+
   },
   "4": {
     "line1YPos": 50,
@@ -732,8 +732,8 @@ const alphabet = {
     "line8XPos": 100,
     "line8YPos": 0,
     "line8Length": 0,
-    // VAR018
-    // VAR019
+    // VAR_20
+
   },
   "5": {
     "line1YPos": 0,
@@ -755,8 +755,8 @@ const alphabet = {
     "line8XPos": 100,
     "line8YPos": 0,
     "line8Length": 0,
-    // VAR018
-    // VAR019
+    // VAR_20
+
   },
   "6": {
     "line1YPos": 50,
@@ -778,8 +778,8 @@ const alphabet = {
     "line8XPos": 0,
     "line8YPos": 0,
     "line8Length": 0,
-    // VAR018
-    // VAR019
+    // VAR_20
+
   },
   "7": {
     "line1YPos": 0,
@@ -801,8 +801,8 @@ const alphabet = {
     "line8XPos": 100,
     "line8YPos": 0,
     "line8Length": 0,
-    // VAR018
-    // VAR019
+    // VAR_20
+
   },
   "8": {
     "line1YPos": 0,
@@ -824,8 +824,8 @@ const alphabet = {
     "line8XPos": 100,
     "line8YPos": 0,
     "line8Length": 0,
-    // VAR018
-    // VAR019
+    // VAR_20
+
   },
   "9": {
     "line1YPos": 0,
@@ -847,8 +847,8 @@ const alphabet = {
     "line8XPos": 100,
     "line8YPos": 0,
     "line8Length": 0,
-    // VAR018
-    // VAR019
+    // VAR_20
+
     "line6Length": 50,
   }
 
