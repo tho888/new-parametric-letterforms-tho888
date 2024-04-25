@@ -20,7 +20,6 @@ const alphabet = {
     "dLine2YPos": 25,
     "dLine2Length": 50,
     // VAR_20
-
   },
   "A": {
     "hLine1YPos": 0,
@@ -43,7 +42,6 @@ const alphabet = {
     "dLine2YPos": 0,
     "dLine2Length": 0,
     // VAR_20
-
   },
   "B": {
     "hLine1YPos": 0,
@@ -66,7 +64,6 @@ const alphabet = {
     "dLine2YPos": 0,
     "dLine2Length": 0,
     // VAR_20
-
   },
   "C": {
     "hLine1YPos": 0,
@@ -89,7 +86,6 @@ const alphabet = {
     "dLine2YPos": 0,
     "dLine2Length": 0,
     // VAR_20
-
   },
   "D": {
     "hLine1YPos": 0,
@@ -112,7 +108,6 @@ const alphabet = {
     "dLine2YPos": 0,
     "dLine2Length": 0,
     // VAR_20
-
   },
   "E": {
     "hLine1YPos": 0,
@@ -135,7 +130,6 @@ const alphabet = {
     "dLine2YPos": 0,
     "dLine2Length": 0,
     // VAR_20
-
   },
   "F": {
     "hLine1YPos": 0,
@@ -158,7 +152,6 @@ const alphabet = {
     "dLine2YPos": 0,
     "dLine2Length": 0,
     // VAR_20
-
   },
   "G": {
     "hLine1YPos": 0,
@@ -181,7 +174,6 @@ const alphabet = {
     "dLine2YPos": 0,
     "dLine2Length": 0,
     // VAR_20
-
   },
   "H": {
     "hLine1YPos": 50,
@@ -204,7 +196,6 @@ const alphabet = {
     "dLine2YPos": 0,
     "dLine2Length": 0,
     // VAR_20
-
   },
   "I": {
     "hLine1YPos": 0,
@@ -227,7 +218,6 @@ const alphabet = {
     "dLine2YPos": 0,
     "dLine2Length": 0,
     // VAR_20
-
   },
   "J": {
     "hLine1YPos": 100,
@@ -250,7 +240,6 @@ const alphabet = {
     "dLine2YPos": 0,
     "dLine2Length": 0,
     // VAR_20
-
   },
   "K": {
     "hLine1YPos": 50,
@@ -273,7 +262,6 @@ const alphabet = {
     "dLine2YPos": 0,
     "dLine2Length": 50,
     // VAR_20
-
   },
   "L": {
     "hLine1YPos": 100,
@@ -296,7 +284,6 @@ const alphabet = {
     "dLine2YPos": 0,
     "dLine2Length": 0,
     // VAR_20
-
   },
   "M": {
     "hLine1YPos": 0,
@@ -319,7 +306,6 @@ const alphabet = {
     "dLine2YPos": 0,
     "dLine2Length": 50,
     // VAR_20
-
   },
   "N": {
     "hLine1YPos": 0,
@@ -342,7 +328,6 @@ const alphabet = {
     "dLine2YPos": 0,
     "dLine2Length": 0,
     // VAR_20
-
   },
   "O": {
     "hLine1YPos": 0,
@@ -365,7 +350,6 @@ const alphabet = {
     "dLine2YPos": 0,
     "dLine2Length": 0,
     // VAR_20
-
   },
   "P": {
     "hLine1YPos": 0,
@@ -388,7 +372,6 @@ const alphabet = {
     "dLine2YPos": 0,
     "dLine2Length": 0,
     // VAR_20
-
   },
   "Q": {
     "hLine1YPos": 0,
@@ -411,7 +394,6 @@ const alphabet = {
     "dLine2YPos": 0,
     "dLine2Length": 0,
     // VAR_20
-
   },
   "R": {
     "hLine1YPos": 0,
@@ -434,7 +416,6 @@ const alphabet = {
     "dLine2YPos": 0,
     "dLine2Length": 0,
     // VAR_20
-
   },
   "S": {
     "hLine1YPos": 0,
@@ -457,7 +438,6 @@ const alphabet = {
     "dLine2YPos": 0,
     "dLine2Length": 0,
     // VAR_20
-
   },
   "T": {
     "hLine1YPos": 0,
@@ -480,7 +460,6 @@ const alphabet = {
     "dLine2YPos": 0,
     "dLine2Length": 0,
     // VAR_20
-
   },
   "U": {
     "hLine1YPos": 100,
@@ -503,7 +482,6 @@ const alphabet = {
     "dLine2YPos": 0,
     "dLine2Length": 0,
     // VAR_20
-
   },
   "V": {
     "hLine1YPos": 0,
@@ -526,7 +504,6 @@ const alphabet = {
     "dLine2YPos": 50,
     "dLine2Length": 50,
     // VAR_20
-
   },
   "W": {
     "hLine1YPos": 0,
@@ -549,7 +526,6 @@ const alphabet = {
     "dLine2YPos": 50,
     "dLine2Length": 50,
     // VAR_20
-
   },
   "X": {
     "hLine1YPos": 0,
@@ -572,7 +548,6 @@ const alphabet = {
     "dLine2YPos": 0,
     "dLine2Length": 100,
     // VAR_20
-
   },
   "Y": {
     "hLine1YPos": 0,
@@ -595,7 +570,6 @@ const alphabet = {
     "dLine2YPos": 0,
     "dLine2Length": 50,
     // VAR_20
-
   },
   "Z": {
     "hLine1YPos": 0,
@@ -618,7 +592,6 @@ const alphabet = {
     "dLine2YPos": 0,
     "dLine2Length": 100,
     // VAR_20
-
   },
   "0": {
     "hLine1YPos": 0,
@@ -641,7 +614,6 @@ const alphabet = {
     "dLine2YPos": 0,
     "dLine2Length": 100,
     // VAR_20
-
   },
   "1": {
     "hLine1YPos": 0,
@@ -664,7 +636,6 @@ const alphabet = {
     "dLine2YPos": 0,
     "dLine2Length": 0,
     // VAR_20
-
   },
   "2": {
     "hLine1YPos": 0,
@@ -687,7 +658,6 @@ const alphabet = {
     "dLine2YPos": 0,
     "dLine2Length": 0,
     // VAR_20
-
   },
   "3": {
     "hLine1YPos": 0,
@@ -710,7 +680,6 @@ const alphabet = {
     "dLine2YPos": 0,
     "dLine2Length": 0,
     // VAR_20
-
   },
   "4": {
     "hLine1YPos": 50,
@@ -733,7 +702,6 @@ const alphabet = {
     "dLine2YPos": 0,
     "dLine2Length": 0,
     // VAR_20
-
   },
   "5": {
     "hLine1YPos": 0,
@@ -748,7 +716,7 @@ const alphabet = {
     "vLine2XPos": 100,
     "vLine2Length": 65,
     "vLine2Shift": 35,
-    "vLine3Length": 35,
+    "vLine3Length": 50,
     "dLine1XPos": 0,
     "dLine1YPos": 0,
     "dLine1Length": 0,
@@ -756,7 +724,6 @@ const alphabet = {
     "dLine2YPos": 0,
     "dLine2Length": 0,
     // VAR_20
-
   },
   "6": {
     "hLine1YPos": 50,
@@ -779,7 +746,6 @@ const alphabet = {
     "dLine2YPos": 0,
     "dLine2Length": 0,
     // VAR_20
-
   },
   "7": {
     "hLine1YPos": 0,
@@ -802,7 +768,6 @@ const alphabet = {
     "dLine2YPos": 0,
     "dLine2Length": 0,
     // VAR_20
-
   },
   "8": {
     "hLine1YPos": 0,
@@ -825,7 +790,6 @@ const alphabet = {
     "dLine2YPos": 0,
     "dLine2Length": 0,
     // VAR_20
-
   },
   "9": {
     "hLine1YPos": 0,
@@ -848,8 +812,5 @@ const alphabet = {
     "dLine2YPos": 0,
     "dLine2Length": 0,
     // VAR_20
-
-    "vLine3Length": 50,
   }
-
 }

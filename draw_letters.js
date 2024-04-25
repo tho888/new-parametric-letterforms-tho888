@@ -8,15 +8,21 @@ const darkGrey = "#241F1D";
 const salmon = "#F2755E";
 const darkCyan = "#0D8AA1";
 
-
 function drawLetter(letterData) {
 
   push();
 
-
   // stroke setup
   strokeWeight(7);
   strokeCap(ROUND); // 'ROUND' or 'PROJECT' works best
+
+  // diagonal line parameters
+  let dLine1XPos = letterData["dLine1XPos"];
+  let dLine1YPos = letterData["dLine1YPos"];
+  let dLine1Length = letterData["dLine1Length"];
+  let dLine2XPos = letterData["dLine2XPos"];
+  let dLine2YPos = letterData["dLine2YPos"];
+  let dLine2Length = letterData["dLine2Length"];
 
   // horizontal line parameters
   let hLine1YPos = letterData["hLine1YPos"];
@@ -35,14 +41,6 @@ function drawLetter(letterData) {
   let vLine2Shift = letterData["vLine2Shift"];
   let vLine3Length = letterData["vLine3Length"];
 
-  // diagonal line parameters
-  let dLine1XPos = letterData["dLine1XPos"];
-  let dLine1YPos = letterData["dLine1YPos"];
-  let dLine1Length = letterData["dLine1Length"];
-  let dLine2XPos = letterData["dLine2XPos"];
-  let dLine2YPos = letterData["dLine2YPos"];
-  let dLine2Length = letterData["dLine2Length"];
-
   // draw diagonal lines
   stroke(darkCyan);
   line(dLine1XPos, dLine1YPos, dLine1Length + dLine1XPos, dLine1Length + dLine1YPos);
@@ -59,7 +57,6 @@ function drawLetter(letterData) {
   line(vLine1XPos, 0, vLine1XPos, vLine1Length);
   line(vLine2XPos, vLine2Shift, vLine2XPos, vLine2Length + vLine2Shift);
   line(50, 50, 50, vLine3Length);
-
 
   pop();
 }
