@@ -10,12 +10,12 @@ const darkCyan = "#0D8AA1";
 
 
 function drawLetter(letterData) {
-  
+
   push();
 
 
   // stroke setup
-  strokeWeight(7); 
+  strokeWeight(7);
   strokeCap(ROUND); // 'ROUND' or 'PROJECT' works best
 
   // horizontal line parameters
@@ -92,9 +92,4 @@ var swapWords = [
   "WAVEFORM",
   "BRAZENLY",
   "HEXAPODS"
-  
-  // AEIOU QWRTYPSDFGHJKLZXCVBNM
-  // AEIOU WRYPSDFGHJKLZXVBNM
-  // AEIOU WPSDFGHJKLXVM
-  // AEIOU WFGJKLVM
 ]
