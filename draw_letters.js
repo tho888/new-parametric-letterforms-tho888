@@ -40,6 +40,7 @@ function drawLetter(letterData) {
   let vLine2Length = letterData["vLine2Length"];
   let vLine2Shift = letterData["vLine2Shift"];
   let vLine3Length = letterData["vLine3Length"];
+  let vLine3Shift = letterData["vLine3Shift"];
 
   // draw diagonal lines
   stroke(darkCyan);
@@ -56,7 +57,7 @@ function drawLetter(letterData) {
   stroke(darkGrey);
   line(vLine1XPos, 0, vLine1XPos, vLine1Length);
   line(vLine2XPos, vLine2Shift, vLine2XPos, vLine2Length + vLine2Shift);
-  line(50, 50, 50, vLine3Length);
+  line(50, 50 + vLine3Shift, 50, 50 + vLine3Length + vLine3Shift);
 
   pop();
 }
@@ -76,6 +77,7 @@ function interpolate_letter(percent, oldObj, newObj) {
   new_letter["vLine2Length"] = map(percent, 0, 100, oldObj["vLine2Length"], newObj["vLine2Length"]);
   new_letter["vLine2Shift"] = map(percent, 0, 100, oldObj["vLine2Shift"], newObj["vLine2Shift"]);
   new_letter["vLine3Length"] = map(percent, 0, 100, oldObj["vLine3Length"], newObj["vLine3Length"]);
+  new_letter["vLine3Shift"] = map(percent, 0, 100, oldObj["vLine3Shift"], newObj["vLine3Shift"]);
   new_letter["dLine1XPos"] = map(percent, 0, 100, oldObj["dLine1XPos"], newObj["dLine1XPos"]);
   new_letter["dLine1YPos"] = map(percent, 0, 100, oldObj["dLine1YPos"], newObj["dLine1YPos"]);
   new_letter["dLine1Length"] = map(percent, 0, 100, oldObj["dLine1Length"], newObj["dLine1Length"]);
