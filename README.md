@@ -1,17 +1,32 @@
 ## MDDN 242 2024 Assignment 2
 
-(Replace this README with information about your alphabet. This is an example.)
+**GRIDLOCK** was created by using eight simple `line()` functions, containing twenty different parameters that alter the position and length of each line.
 
-Each of my letters is composed with two circles. The size and position of the first circle is fixed, but the location and size of the second circle is controlled by three parameters.
-
-The three parameters per letter:
-  * `size` : radius of the second circle
-  * `offsetx` : x offset of the second circle relative to the first one
-  * `offsety` : y offset of the second circle relative to the first one
+Twenty parameters per letter:
+  - `dLine1XPos` : ***x-axis position*** to draw **diagonal line 1** from
+  - `dLine1YPos` : ***y-axis position*** to draw **diagonal line 1** from
+  - `dLine1Length` : ***length*** of **diagonal line 1**
+  - `dLine2XPos` : ***x-axis position*** to draw **diagonal line 2** from
+  - `dLine2YPos` : ***y-axis position*** to draw **diagonal line 2** from
+  - `dLine2Length` : ***length*** of **diagonal line 2**
+  - `hLine1YPos` : ***y-axis position*** of **horizonal line 1**
+  - `hLine1Length` : ***length*** of **horizonal line 1**
+  - `hLine2YPos` : ***y-axis position*** of **horizonal line 2**
+  - `hLine2Length` : ***length*** of **horizonal line 2**
+  - `hLine2Shift` : ***x-axis shift*** of **horizonal line 2**
+  - `hLine3YPos` : ***y-axis position*** of **horizonal line 3**
+  - `hLine3Length` : ***length*** of **horizonal line 3**
+  - `vLine1XPos` : ***x-axis position*** of **vertial line 1**
+  - `vLine1Length` : ***length*** of **vertical line 1**
+  - `vLine2XPos` : ***x-axis position*** of **vertical line 2**
+  - `vLine2Length` : ***length*** of **vertial line 2**
+  - `vLine2Shift` : ***y-axis shift*** of **vertical line 2**
+  - `vLine3Length` : ***length*** of **vertical line 3**
+  - `vLine3Shift` : ***y-axis shift*** of **vertical line 3**
 
 ___
 
-### PROGRESS DOCUMENTATION / CHANGELOG
+### CHANGELOG & PROGRESS DOCUMENTATION
 
 ##### 25/03/24 - 31/03/24 *(Week 5)*
 
@@ -23,7 +38,7 @@ ___
 ##### 01/04/24 - 03/04/24 *(Week 6)*
 
 - Continued experimentation, trying out an arabic-style typeface similar to [this one](https://www.dafont.com/img/charmap/a/l/alhambra0.png)
-- This proved to be too difficul - creating curved line parameters that worked for each letter
+- This proved to be too difficult - creating curved line parameters that worked for each letter
 
 ___
 
@@ -37,7 +52,7 @@ ___
 
 ##### 22/04/24 - 28/04/24 *(Week 8)*
 
-- Consolidated variables to cut down to < 20 in total
+- Consolidated variables to cut them down to 20
 - Updated colours and fixed layering issues
 - Adjusted variable names to be more intelligible
 
@@ -45,6 +60,6 @@ ___
 
 ##### 29/04/24 - 02/05/24 *(Week 9)*
 
-- 
+- Added typeface setup variables for font size, weight, and stroke cap
 
 ___
