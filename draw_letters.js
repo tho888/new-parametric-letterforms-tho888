@@ -1,21 +1,21 @@
 // system setup
-var systemBackgroundColor = "#ccc";
-var systemLineColor = "#fff";
+var systemBackgroundColor = "#CCC";
+var systemLineColor = "#FFF";
 var systemBoxColor = "#999";
 
 // colour setup
-const darkGrey = "#241F1D";
-const salmon = "#F2755E";
-const darkCyan = "#0D8AA1";
-
-// typeface setup parameters (acceptable values)
-const typefaceSize = 0.8; // set the scale (<=1)
-const typefaceStrokeWeight = 13; // set the strokeWeight (5-15)
-const typefaceStrokeCap = "ROUND"; // set the strokeCap ("ROUND" / "PROJECT")
+var verticalLineColour = "#241F1D";
+var horizontalLineColour = "#F2755E";
+var diagonalLineColour = "#0D8AA1";
 
 function drawLetter(letterData) {
 
   push();
+
+  // typeface setup parameters (acceptable values)
+  let typefaceSize = 0.9; // set the scale (0.5-1)
+  let typefaceStrokeWeight = 13; // set the strokeWeight (5-15)
+  let typefaceStrokeCap = PROJECT; // set the strokeCap ("ROUND" || "PROJECT")
 
   // stroke setup
   strokeWeight(typefaceStrokeWeight);
@@ -48,18 +48,18 @@ function drawLetter(letterData) {
   let vLine3Shift = typefaceSize * letterData["vLine3Shift"];
 
   // draw diagonal lines
-  stroke(darkCyan);
+  stroke(diagonalLineColour);
   line(dLine1XPos, dLine1YPos, dLine1Length + dLine1XPos, dLine1Length + dLine1YPos);
   line(dLine2XPos, dLine2YPos, dLine2XPos - dLine2Length, dLine2Length + dLine2YPos);
 
   // draw horizonal lines
-  stroke(salmon);
+  stroke(horizontalLineColour);
   line(0, hLine1YPos, hLine1Length, hLine1YPos);
   line(hLine2Shift, hLine2YPos, hLine2Length + hLine2Shift, hLine2YPos);
   line(0, hLine3YPos, hLine3Length, hLine3YPos);
 
   // draw vertical lines
-  stroke(darkGrey);
+  stroke(verticalLineColour);
   line(vLine1XPos, 0, vLine1XPos, vLine1Length);
   line(vLine2XPos, vLine2Shift, vLine2XPos, vLine2Length + vLine2Shift);
   line(typefaceSize * 50, typefaceSize * 50 + vLine3Shift, typefaceSize * 50, typefaceSize * 50 + vLine3Length + vLine3Shift);
