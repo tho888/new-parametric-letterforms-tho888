@@ -8,6 +8,9 @@ var verticalLineColour = "#241F1D";
 var horizontalLineColour = "#F2755E";
 var diagonalLineColour = "#0D8AA1";
 
+// shift letters down on the canvas
+var shiftLettersY = 75;
+
 function drawLetter(letterData) {
 
   push();
@@ -49,20 +52,20 @@ function drawLetter(letterData) {
 
   // draw diagonal lines
   stroke(diagonalLineColour);
-  line(dLine1XPos, dLine1YPos, dLine1Length + dLine1XPos, dLine1Length + dLine1YPos);
-  line(dLine2XPos, dLine2YPos, dLine2XPos - dLine2Length, dLine2Length + dLine2YPos);
+  line(dLine1XPos, dLine1YPos + shiftLettersY, dLine1Length + dLine1XPos, dLine1Length + dLine1YPos + shiftLettersY);
+  line(dLine2XPos, dLine2YPos + shiftLettersY, dLine2XPos - dLine2Length, dLine2Length + dLine2YPos + shiftLettersY);
 
   // draw horizonal lines
   stroke(horizontalLineColour);
-  line(0, hLine1YPos, hLine1Length, hLine1YPos);
-  line(hLine2Shift, hLine2YPos, hLine2Length + hLine2Shift, hLine2YPos);
-  line(0, hLine3YPos, hLine3Length, hLine3YPos);
+  line(0, hLine1YPos + shiftLettersY, hLine1Length, hLine1YPos + shiftLettersY);
+  line(hLine2Shift, hLine2YPos + shiftLettersY, hLine2Length + hLine2Shift, hLine2YPos + shiftLettersY);
+  line(0, hLine3YPos + shiftLettersY, hLine3Length, hLine3YPos + shiftLettersY);
 
   // draw vertical lines
   stroke(verticalLineColour);
-  line(vLine1XPos, 0, vLine1XPos, vLine1Length);
-  line(vLine2XPos, vLine2Shift, vLine2XPos, vLine2Length + vLine2Shift);
-  line(typefaceSize * 50, typefaceSize * 50 + vLine3Shift, typefaceSize * 50, typefaceSize * 50 + vLine3Length + vLine3Shift);
+  line(vLine1XPos, 0 + shiftLettersY, vLine1XPos, vLine1Length + shiftLettersY);
+  line(vLine2XPos, vLine2Shift + shiftLettersY, vLine2XPos, vLine2Length + vLine2Shift + shiftLettersY);
+  line(typefaceSize * 50, typefaceSize * 50 + vLine3Shift + shiftLettersY, typefaceSize * 50, typefaceSize * 50 + vLine3Length + vLine3Shift + shiftLettersY);
 
   pop();
 }
