@@ -1,5 +1,5 @@
 // system setup
-var systemBackgroundColor = "#CCC";
+var systemBackgroundColor = "#DDD";
 var systemLineColor = "#FFF";
 var systemBoxColor = "#999";
 
@@ -14,8 +14,8 @@ function drawLetter(letterData) {
 
   // typeface setup parameters (acceptable values)
   let typefaceSize = 0.9; // set the scale (0.5-1)
-  let typefaceStrokeWeight = 13; // set the strokeWeight (5-15)
-  let typefaceStrokeCap = PROJECT; // set the strokeCap ("ROUND" || "PROJECT")
+  let typefaceStrokeWeight = 11; // set the strokeWeight (5-15)
+  let typefaceStrokeCap = ROUND; // set the strokeCap ("ROUND" || "PROJECT")
 
   // stroke setup
   strokeWeight(typefaceStrokeWeight);
@@ -94,6 +94,6 @@ function interpolate_letter(percent, oldObj, newObj) {
 
 var swapWords = [
   "GRIDLOCK",
-  "BLOCKAGE",
+  "PINBOARD",
   "SQR67890"
 ]
