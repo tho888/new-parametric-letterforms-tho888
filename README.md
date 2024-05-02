@@ -1,6 +1,6 @@
 ## MDDN 242 2024 Assignment 2
 
-**GRIDLOCK** was created by using eight simple `line()` functions, containing twenty different parameters that alter the position and length of each line.
+**GRIDLOCK** was created by using eight simple `line` functions, containing twenty different parameters that modify the position and length of each line.
 
 Twenty parameters per letter:
   - `dLine1XPos` : ***x-axis position*** to draw **diagonal line 1** from
@@ -44,7 +44,7 @@ ___
 
 ##### 15/04/24 - 21/04/24 *(Week 7)*
 
-- Testing out a new idea, initially aimed for a cryllic-style typeface but landed on an idea that loosely resembled a seven-segment LED, with a total of 8 drawn lines ()
+- Testing out a new idea, initially aimed for a cryllic-style typeface but landed on an idea that loosely resembled a seven-segment LED, with a total of 8 drawn lines
 - Experimented with a custom line function to draw a dotted path in place of a line
 - [Completed initial draft of alphabet](https://raw.githubusercontent.com/tho888/new-parametric-letterforms-tho888/20e5330451f20b0df8cfafa50e68c02fa0d35801/preview.jpg)
 
@@ -61,5 +61,5 @@ ___
 ##### 29/04/24 - 02/05/24 *(Week 9)*
 
 - Added typeface setup variables for font size, weight, and stroke cap
-
-___
+- Fixes for stroke parameters and interpolation
+- Finalising design
